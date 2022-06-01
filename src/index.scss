@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply mx-5 sm:mx-10 md:mx-24 lg:mx-32 xl:mx-60 2xl:mx-64;
+  @apply bg-primary-50 dark:bg-gray-900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-gray-900 dark:text-gray-200;
+}
+
+p {
+  @apply text-gray-800 dark:text-gray-200;
+}
+
+.button {
+  @apply bg-accent-600 hover:bg-accent-700 px-5 py-2 font-bold rounded-md transition duration-150 text-white mt-3;
+
+  &[disabled] {
+    @apply bg-accent-300 hover:bg-accent-300;
+  }
+}
+
+label {
+  @apply block text-gray-700 dark:text-gray-200 text-sm font-bold mb-2 mt-3;
+}
+input {
+  @apply appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-50 bg-white dark:bg-gray-700 leading-tight focus:outline-none;
+}
+
+textarea {
+  @apply appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-50 bg-white dark:bg-gray-700 leading-tight focus:outline-none resize-none;
+}
+
+// Overrides
+
+.bg-orange-500 {
+  background: #f69c00;
+}
+
+.bg-green-500 {
+  background: #10b981;
+}
+
+.bg-black-500 {
+  background: #000000;
+  color: white;
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-1500px);
+    transform: translateX(-1500px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-1500px);
+    transform: translateX(-1500px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(1500px);
+    transform: translateX(1500px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(1500px);
+    transform: translateX(1500px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
